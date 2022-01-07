@@ -102,11 +102,11 @@ ul {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: var(--second-text-color);
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  transition: color 250ms var(--timing-function);
 }
 
 .logo {
@@ -139,6 +139,7 @@ ul {
   display: flex;
   align-items: center;
   color: var(--main-text-color);
+  transition: color 250ms var(--timing-function);
 }
 
 .contact-icon {
@@ -151,15 +152,14 @@ ul {
 .contact-link:focus,
 .contact-link:hover {
   color: var(--accent-text-color);
-  transition: color 250ms var(--timing-function);
-}
+ }
 
 .current {
-	position: relative;
+  position: relative;
   color: var(--accent-text-color);
 }
-.current::after{
-	position: absolute;
+.current::after {
+  position: absolute;
   content: '';
   display: block;
   left: 0;
@@ -175,7 +175,7 @@ ul {
   max-width: 1600px;
   height: 600px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(../imeges/offise.jpg);
+    url(../imeges/offise.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -208,15 +208,14 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.06em;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 .btn-main:focus,
 .btn-main:hover {
   background-color: #188ce8;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function);
-}
+ }
 
 /* !main index*/
 
@@ -246,6 +245,7 @@ ul {
 .qualities-item:last-child {
   margin-right: 0;
 }
+
 .qualities-img {
   display: flex;
   justify-content: center;
@@ -376,6 +376,7 @@ ul {
 .team-link {
   background-color: var(--white-text-color);
   color: var(--color-icon-main);
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .team-social-icon {
@@ -386,8 +387,6 @@ ul {
 .team-link:focus {
   background-color: var(--accent-text-color);
   color: var(--white-text-color);
-  transition: color 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function);
 }
 
 .client-list {
@@ -409,6 +408,7 @@ ul {
   border: 1px solid var(--color-icon-main);
   border-radius: 4px;
   color: var(--color-icon-main);
+  transition: color 250ms var(--timing-function),  border-color 250ms var(--timing-function);
 }
 
 .client-icon {
@@ -419,7 +419,6 @@ ul {
 .client-link:hover {
   border-color: var(--accent-text-color);
   color: var(--accent-text-color);
-  transition: color 250ms var(--timing-function);
 }
 
 /* !footer */
@@ -453,6 +452,7 @@ ul {
   display: block;
   color: var(--white-text-color);
   font-style: normal;
+  transition: color 250ms var(--timing-function);
 }
 
 .address-item,
@@ -468,6 +468,7 @@ ul {
   display: block;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  transition: color 250ms var(--timing-function);
 }
 
 .map-link:focus,
@@ -475,7 +476,6 @@ ul {
 .address-link:focus,
 .address-link:hover {
   color: var(--accent-text-color);
-  transition: color 250ms var(--timing-function);
 }
 
 .footer-social-title {
@@ -493,6 +493,7 @@ ul {
 .footer-link {
   background-color: hsla(0, 0%, 100%, 0.1);
   color: var(--white-text-color);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .team-social-icon {
@@ -502,7 +503,6 @@ ul {
 .footer-link:hover,
 .footer-link:focus {
   background-color: var(--accent-text-color);
-  transition: background-color 250ms var(--timing-function);
 }
 
 /* !portfolio main*/
@@ -528,6 +528,8 @@ ul {
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
+  box-shadow 250ms var(--timing-function);
 }
 
 .btn-portfolio:focus,
@@ -535,9 +537,6 @@ ul {
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: color 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function);
 }
 
 .pictures {
@@ -552,13 +551,13 @@ ul {
   margin-right: var(--margin-cards-thirty);
   margin-top: var(--margin-cards-thirty);
   border: 1px solid #eeeeee;
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .pictures-link:hover {
   display: block;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
-	 transition: box-shadow 250ms var(--timing-function);
 }
 
 .pictures-box {
