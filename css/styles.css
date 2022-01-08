@@ -565,7 +565,7 @@ ul {
   overflow: hidden;
 }
 
-.pictures:hover .pictures-overlay {
+.pictures-li:hover .pictures-overlay {
   transform: translateY(0);
 }
 
