@@ -628,8 +628,8 @@ ul {
   visibility: hidden;
 }
 
-.backdrop.is-hidden .modal{
-	transform: translate(-50%, -50%) scale(2);
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
 .modal {
@@ -640,7 +640,7 @@ ul {
   height: 581px;
   width: 528px;
   background-color: #ffffff;
-  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
 .button-modal {
