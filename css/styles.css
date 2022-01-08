@@ -152,7 +152,7 @@ ul {
 .contact-link:focus,
 .contact-link:hover {
   color: var(--accent-text-color);
- }
+}
 
 .current {
   position: relative;
@@ -215,7 +215,7 @@ ul {
 .btn-main:hover {
   background-color: #188ce8;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
- }
+}
 
 /* !main index*/
 
@@ -408,7 +408,7 @@ ul {
   border: 1px solid var(--color-icon-main);
   border-radius: 4px;
   color: var(--color-icon-main);
-  transition: color 250ms var(--timing-function),  border-color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 
 .client-icon {
@@ -529,7 +529,7 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
-  box-shadow 250ms var(--timing-function);
+    box-shadow 250ms var(--timing-function);
 }
 
 .btn-portfolio:focus,
@@ -560,6 +560,38 @@ ul {
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
+.pictures-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.pictures:hover .pictures-overlay {
+  transform: translateY(0);
+}
+
+.pictures-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function);
+}
+
+.pictures-text {
+  position: absolute;
+  top: 63px;
+  left: 24px;
+  width: 322px;
+  text-align: start;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--white-text-color);
+}
+
 .pictures-box {
   padding: 20px 24px;
 }
@@ -586,6 +618,8 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
@@ -594,14 +628,19 @@ ul {
   visibility: hidden;
 }
 
+.backdrop.is-hidden .modal{
+	transform: translate(-50%, -50%) scale(2);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   height: 581px;
   width: 528px;
   background-color: #ffffff;
+  transition: transform 250ms var(--timing-function);
 }
 
 .button-modal {
